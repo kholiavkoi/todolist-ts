@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="added new item form">
+      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -59,6 +59,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/EditableSpan.tsx" />
       <recent name="$PROJECT_DIR$/src/AddItemForm.tsx" />
     </key>
   </component>
@@ -102,8 +103,16 @@
       <workItem from="1680860519935" duration="8568000" />
       <workItem from="1681149371561" duration="143000" />
       <workItem from="1682323261713" duration="6044000" />
-      <workItem from="1685213413780" duration="2071000" />
+      <workItem from="1685213413780" duration="6031000" />
     </task>
+    <task id="LOCAL-00001" summary="added new item form">
+      <created>1685216976917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685216976917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added new item form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new item form" />
   </component>
 </project>
