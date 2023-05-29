@@ -19,6 +19,8 @@ type PropsType = {
 	changeStatus: (id: string, isDone: boolean, todolistId: string) => void
 	filter: FilterValuesType
 	removeTodolist: (todolistId: string) => void
+	changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
+	changeTodoTitle: (todolistId: string, newTitle: string) => void
 }
 
 export function Todolist({
@@ -30,7 +32,9 @@ export function Todolist({
 	                         changeStatus,
 	                         filter,
 	                         id,
-	                         removeTodolist
+	                         removeTodolist,
+	                         changeTaskTitle,
+	                         changeTodoTitle
                          }: PropsType) {
 
 	const onAllClickHandler = () => {
@@ -47,13 +51,18 @@ export function Todolist({
 		removeTodolist(id)
 	}
 
+	const changeTodolistTitle = (newTitle: string) => {
+		changeTodoTitle(id, newTitle)
+	}
+
 	const addNewTask = (title: string) => {
 		addTask(title, id)
 	}
 
 	return (
 		<div>
-			<h3>{title}
+			<h3>
+				<EditableSpan title={title} onChange={changeTodolistTitle} />
 				<button onClick={removeTodo}>x</button>
 			</h3>
 			<AddItemForm addItem={addNewTask} />
@@ -63,15 +72,19 @@ export function Todolist({
 						removeTask(task.id, id)
 					}
 
-					const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+					const onChangeStatusHandler = (e: ChangeEvent<HTMLInputElement>) => {
 						changeStatus(task.id, e.currentTarget.checked, id)
+					}
+
+					const onChangeTitleHandler = (newValue: string) => {
+						changeTaskTitle(task.id, newValue, id)
 					}
 
 					return <li className={task.isDone ? 'is-done' : ''} key={task.id}>
 						<input type="checkbox"
-						       onChange={onChangeHandler}
+						       onChange={onChangeStatusHandler}
 						       checked={task.isDone} />
-						<EditableSpan title={task.title} />
+						<EditableSpan title={task.title} onChange={onChangeTitleHandler} />
 						<button onClick={onRemoveHandler}>X</button>
 					</li>
 				})}

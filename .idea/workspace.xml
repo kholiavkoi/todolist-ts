@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="added new item form">
-      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="added editable span">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +103,8 @@
       <workItem from="1680860519935" duration="8568000" />
       <workItem from="1681149371561" duration="143000" />
       <workItem from="1682323261713" duration="6044000" />
-      <workItem from="1685213413780" duration="6031000" />
+      <workItem from="1685213413780" duration="6078000" />
+      <workItem from="1685379430436" duration="2815000" />
     </task>
     <task id="LOCAL-00001" summary="added new item form">
       <created>1685216976917</created>
@@ -112,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685216976917</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added editable span">
+      <created>1685222437484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685222437484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added new item form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new item form" />
+    <MESSAGE value="added editable span" />
+    <option name="LAST_COMMIT_MESSAGE" value="added editable span" />
   </component>
 </project>
