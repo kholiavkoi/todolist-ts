@@ -2,6 +2,8 @@ import React, { ChangeEvent } from "react";
 import { FilterValuesType } from "./App";
 import { AddItemForm } from "./AddItemForm";
 import { EditableSpan } from "./EditableSpan";
+import DeleteIcon from '@mui/icons-material/Delete';
+import { Button, Checkbox, IconButton } from "@mui/material";
 
 export type TaskType = {
 	id: string
@@ -63,7 +65,9 @@ export function Todolist({
 		<div>
 			<h3>
 				<EditableSpan title={title} onChange={changeTodolistTitle} />
-				<button onClick={removeTodo}>x</button>
+				<IconButton onClick={removeTodo}>
+					<DeleteIcon />
+				</IconButton>
 			</h3>
 			<AddItemForm addItem={addNewTask} />
 			<ul>
@@ -81,23 +85,25 @@ export function Todolist({
 					}
 
 					return <li className={task.isDone ? 'is-done' : ''} key={task.id}>
-						<input type="checkbox"
+						<Checkbox
 						       onChange={onChangeStatusHandler}
 						       checked={task.isDone} />
 						<EditableSpan title={task.title} onChange={onChangeTitleHandler} />
-						<button onClick={onRemoveHandler}>X</button>
+						<IconButton onClick={onRemoveHandler}>
+							<DeleteIcon />
+						</IconButton>
 					</li>
 				})}
 
 			</ul>
 
 			<div>
-				<button className={filter === 'all' ? 'active-filter' : ''} onClick={onAllClickHandler}>All</button>
-				<button className={filter === 'active' ? 'active-filter' : ''} onClick={onActiveClickHandler}>Active
-				</button>
-				<button className={filter === 'completed' ? 'active-filter' : ''}
+				<Button variant={filter === 'all' ? 'contained' : 'text'} color='success' onClick={onAllClickHandler}>All</Button>
+				<Button color='primary' variant={filter === 'active' ? 'contained' : 'text'} onClick={onActiveClickHandler}>Active
+				</Button>
+				<Button color='secondary' variant={filter === 'completed' ? 'contained' : 'text'}
 				        onClick={onCompletedClickHandler}>Completed
-				</button>
+				</Button>
 			</div>
 		</div>
 	)
