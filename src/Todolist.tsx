@@ -70,7 +70,7 @@ export function Todolist({
 				</IconButton>
 			</h3>
 			<AddItemForm addItem={addNewTask} />
-			<ul>
+			<div>
 				{tasks.map(task => {
 					const onRemoveHandler = () => {
 						removeTask(task.id, id)
@@ -84,7 +84,7 @@ export function Todolist({
 						changeTaskTitle(task.id, newValue, id)
 					}
 
-					return <li className={task.isDone ? 'is-done' : ''} key={task.id}>
+					return <div className={task.isDone ? 'is-done' : ''} key={task.id}>
 						<Checkbox
 						       onChange={onChangeStatusHandler}
 						       checked={task.isDone} />
@@ -92,10 +92,10 @@ export function Todolist({
 						<IconButton onClick={onRemoveHandler}>
 							<DeleteIcon />
 						</IconButton>
-					</li>
+					</div>
 				})}
 
-			</ul>
+			</div>
 
 			<div>
 				<Button variant={filter === 'all' ? 'contained' : 'text'} color='success' onClick={onAllClickHandler}>All</Button>

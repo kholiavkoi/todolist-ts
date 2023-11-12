@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="added editable span" />
+    <list default="true" id="46331b64-043f-40c0-b4a1-fd14310ee67e" name="Changes" comment="added editable span">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +58,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "yarn:package.json:typescript",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -106,7 +111,7 @@
       <workItem from="1685213413780" duration="6078000" />
       <workItem from="1685379430436" duration="2815000" />
       <workItem from="1699778155430" duration="194000" />
-      <workItem from="1699778356487" duration="8524000" />
+      <workItem from="1699778356487" duration="11694000" />
     </task>
     <task id="LOCAL-00001" summary="added new item form">
       <created>1685216976917</created>
